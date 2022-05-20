@@ -91,10 +91,6 @@ function timeToWalk(steps, stepLength, speed) {
 
 
 function solve(kmH, area){
-    let motorwayLimit = 130;
-    let interstateLimit = 90;
-    let cityLimit = 50;
-    let residentialLimit = 20 ;
     let allowSpeed = 0;
     let status = '';
     let difference = '' ;
@@ -181,12 +177,16 @@ function solve(x1,y1,x2,y2){
 
 
 //9. Words Uppercase 
-function solve(string){
-    string = string.toUpperCase().split(' ');
-    console.log(string);
-
+function sovle(input) {
+    
+    let pattern = /\w+/g;
+    let matches = input.match(pattern);
+    let result = [];
+ 
+    for (let el of matches) {
+        result.push(el.toUpperCase());
+    }
+ 
+    console.log(result.join(", "))
 }
-
-solve('Hi, how are you')
-
 /// 
