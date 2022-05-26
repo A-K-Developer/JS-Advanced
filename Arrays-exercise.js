@@ -155,3 +155,66 @@ function input(input){
 input([[4, 5, 6],
     [6, 5, 4],
     [5, 5, 5]])
+
+// tic tac toe 
+
+ function TicTacToe(moves){
+     let matrix = 
+         [[false, false, false],
+         [false, false, false],
+         [false, false, false]];
+
+     function checkFalse(x) {
+         return x == false
+     }
+
+     let i = 0;
+     let gameOver = false;
+     let turn = 'X';
+     let haveWinner = false;
+
+     while (gameOver == false && i < moves.length && (matrix[0].some(checkFalse) || matrix[1].some(checkFalse) || matrix[2].some(checkFalse))) {
+         let j = moves[i].slice(0, 1);
+         let k = moves[i].slice(2, 3);
+
+         if (matrix[j][k] != false) {
+             console.log("This place is already taken. Please choose another!");
+             i++;
+         }
+         else {
+             matrix[j][k] = turn;
+             if ((matrix[j][0] === matrix[j][1] && matrix[j][1] === matrix[j][2]) ||
+                 (matrix[0][k] ===  matrix[1][k] && matrix[1][k] ===  matrix[2][k]) ) {
+                 gameOver = true;
+                 console.log(`Player ${matrix[j][k]} wins!`);
+                 haveWinner = true;
+             }
+             else if ((j == k) || (j == 2 && k == 0) || (j == 0 && k == 2)) {
+                 if ((matrix[0][0] === matrix[1][1] && matrix[1][1] === matrix[2][2] && matrix[2][2] !== false) ||
+                 (matrix[2][0] === matrix[1][1] && matrix[1][1] === matrix[0][2] && matrix[0][2] !== false)) {
+                         gameOver = true;
+                         console.log(`Player ${matrix[j][k]} wins!`);
+                         haveWinner = true;
+                     }
+             }
+
+             if (i >= (moves.length - 1)){
+  
+                    gameOver = true;
+                } else {
+                    i++;
+                 if (turn == 'X') {
+                     turn = 'O' 
+                 }
+                 else turn = 'X';
+             }
+         }
+     }
+
+     if (!haveWinner) {
+         console.log("The game ended! Nobody wins :(");
+     }
+     console.log(matrix[0].join('\t'));
+     console.log(matrix[1].join('\t'));
+     console.log(matrix[2].join('\t'));
+ }
