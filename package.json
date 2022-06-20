@@ -1,0 +1,26 @@
+{
+  "name": "testing-demo",
+  "version": "1.0.0",
+  "description": "Short demo of unit testing frameworks",
+  "main": "11-Advanced-Functions.js",
+  "scripts": {
+    "test": "asen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1312Levski1914/JS-Advanced.git"
+  },
+  "keywords": [
+    "asko"
+  ],
+  "author": "sen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1312Levski1914/JS-Advanced/issues"
+  },
+  "homepage": "https://github.com/1312Levski1914/JS-Advanced#readme",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}

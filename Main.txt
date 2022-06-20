@@ -1,0 +1,21 @@
+array to hold date of each column
+array to hold table head rows
+array to hold the final objects as result
+
+select all thead th elements
+
+if checkbox is cheked
+
+get all row date from each selected column then push it to colCollection array
+
+
+get current table head name from the name attribute and push it to the arrWith Tabeleheads
+
+arrWithTableHeads = arrWithTableHeads .map(e => e.trim()):
+
+create as many obejects in the main arr as required and then fill them with date
+
+
+get result in JSON format 
+
+Dom output display
