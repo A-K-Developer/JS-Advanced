@@ -1,0 +1,39 @@
+
+
+
+{
+  "movies": [
+    {
+      "id": 1,
+      "tittle": "Black Widow",
+      "type": "BojieDete"
+    },
+    {
+      "id": 2,
+      "tittle": "Elena",
+      "type": "Kurwa"
+    }
+  ],
+  "superhearoes": [
+    {
+      "id": 1,
+      "tittle": "Velizar",
+      "type": "brother"
+    },
+    {
+      "id": 2,
+      "tittle": "Alek",
+      "type": "Sin"
+    },
+    {
+      "id": 3,
+      "tittle": "Hus",
+      "type": "brother"
+    },
+    {
+      "tittle": "Asen",
+      "type": "brother",
+      "id": 4
+    }
+  ]
+}

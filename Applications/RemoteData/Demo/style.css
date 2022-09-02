@@ -1,0 +1,13 @@
+.hide{
+    display: none;
+}
+#movie-list {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    text-align: center;
+    text-decoration: dashed;
+    text-shadow: 3px 1px;
+    gap: 50px;
+    padding: 40px;
+}

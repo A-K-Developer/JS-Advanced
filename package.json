@@ -4,7 +4,7 @@
   "description": "Short demo of unit testing frameworks",
   "main": "11-Advanced-Functions.js",
   "scripts": {
-    "test": "asen"
+    "test": "mocha "
   },
   "repository": {
     "type": "git",
