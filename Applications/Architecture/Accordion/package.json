@@ -1,0 +1,19 @@
+{
+  "name": "accordion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "accordion.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "playwright-chromium": "^1.25.2"
+  },
+  "dependencies": {
+    "mocha": "^10.0.0"
+  }
+}

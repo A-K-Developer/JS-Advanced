@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie list</title>
+    <!-- CSS only -->
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./src/app.js" type="module"></script>
+</head>
+
+<body>
+    <div class="header">
+
+        <ul class="navbar-nav ">
+            <li class="nav-item guest">
+                <a class="nav-link active" data-link="home" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item guest">
+                <a class="nav-link" data-link="login" href="#">Login</a>
+            </li>
+            <li class="nav-item guest">
+                <a class="nav-link" data-link="register" href="#">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-link="movies" href="#">Movie List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-link="myMovies" href="#">MyMovies</a>
+            </li>
+        </ul>
+
+    </div>
+    <section class="login-form hidden">
+        <h3>Login</h3>
+        <form id="login-form">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <input type="submit" value="login">
+        </form>
+    </section>
+    <section class="register hidden">
+        <h3>Register</h3>
+        <form id="register-form">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <input type="submit" value="register">
+        </form>
+    </section>
+    <section class="movies hidden">
+        <h2>All Movies</h2>
+    </section>
+</body>
+
+</html>
